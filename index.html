@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Featured in Cape Cod HOME magazine. Discover the story behind this custom kitchen and bath transformation by CPP Kitchen & Bath.">
+
+  <!-- Open Graph / Social -->
+  <meta property="og:title" content="A Moment to Shine | CPP Kitchen & Bath">
+  <meta property="og:description" content="Featured in Cape Cod HOME magazine. A kitchen and bath transformation designed with care, detail, and the homeowner's vision at the center.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://cppkitchenbath.com/cape-cod-home">
+  <!-- <meta property="og:image" content=""> -->
+
+  <title>A Moment to Shine | Featured in Cape Cod HOME | CPP Kitchen & Bath</title>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Preconnect to Google Analytics -->
+  <link rel="preconnect" href="https://www.googletagmanager.com">
+
+  <!-- GA4 - Replace GA_MEASUREMENT_ID with actual ID -->
+  <!--
+  <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'GA_MEASUREMENT_ID');
+  </script>
+  -->
+
+  <!-- Meta Pixel - Replace PIXEL_ID with actual ID -->
+  <!--
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', 'PIXEL_ID');
+    fbq('track', 'PageView');
+  </script>
+  -->
+
+  <!-- CallRail Dynamic Number Insertion - Replace ACCOUNT_ID and TRACKING_NUMBER -->
+  <!--
+  <script type="text/javascript">
+    (function(a,b,c,d,e,f,g){
+      a['CallRailObject']=e;a[e]=a[e]||function(){
+      (a[e].q=a[e].q||[]).push(arguments)};a[e].t=1*new Date();
+      f=b.createElement(c);f.async=1;f.src=d;
+      g=b.getElementsByTagName(c)[0];g.parentNode.insertBefore(f,g);
+    })(window,document,'script','//cdn.callrail.com/companies/ACCOUNT_ID/TRACKING_NUMBER.js','CallRail');
+  </script>
+  -->
+  <!-- CallRail will automatically swap phone numbers with class "callrail-phone" -->
+</head>
+<body>
+
+  <!-- ================================================================
+       HERO SECTION
+       Reference: plan.md > Page Sections > 1. Hero Section
+       Full-bleed image with dark overlay, staggered animations
+       ================================================================ -->
+  <header class="hero" id="hero">
+    <div class="hero__background" aria-hidden="true"></div>
+    <div class="hero__overlay" aria-hidden="true"></div>
+
+    <div class="hero__content">
+      <span class="hero__badge">Featured in Cape Cod HOME</span>
+
+      <h1 class="hero__title">A Moment to Shine</h1>
+
+      <p class="hero__subtitle">
+        A kitchen and bath transformation designed with care, detail,
+        and the homeowner's vision at the center.
+      </p>
+
+      <div class="btn-group" role="group" aria-label="Primary actions">
+        <a href="#story" class="btn btn--primary" data-track="cta_click" data-track-label="Read the Story">
+          Read the Story
+        </a>
+        <a href="#gallery" class="btn btn--secondary" data-track="cta_click" data-track-label="View Before & After">
+          View Before &amp; After
+        </a>
+        <a href="#contact" class="btn btn--secondary" data-track="cta_click" data-track-label="Book a Consultation">
+          Book a Consultation
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ================================================================
+         MAGAZINE FEATURE SECTION
+         Reference: plan.md > Page Sections > 2. Magazine Feature Section
+         ================================================================ -->
+    <section class="section" id="magazine" aria-labelledby="magazine-title">
+      <div class="container">
+        <div class="magazine">
+          <div class="magazine__images fade-in-left">
+            <div class="magazine__image placeholder">
+              Magazine Cover Placeholder
+            </div>
+            <div class="magazine__image placeholder">
+              Magazine Spread Placeholder
+            </div>
+          </div>
+
+          <div class="magazine__content fade-in-right">
+            <img src="images/cape-cod-home-logo.png" alt="Cape Cod HOME Magazine" class="magazine__logo">
+            <h2 id="magazine-title" class="visually-hidden">Featured in Cape Cod HOME</h2>
+            <p class="lead">
+              We were honored to be featured in Cape Cod HOME for this custom
+              kitchen and bath transformation.
+            </p>
+            <p>
+              The magazine captured not just the finished spaces, but the story
+              behind them: the homeowner's vision, the design process, and the
+              craftsmanship that brought it all together. It's a project we're
+              incredibly proud of.
+            </p>
+
+            <div class="scratch-card" id="scratchCard">
+              <img src="images/qr-code.png" alt="Scan to view story online" class="scratch-card__reveal">
+              <canvas class="scratch-card__canvas" id="scratchCanvas"></canvas>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================
+         HOMEOWNER STORY SECTION
+         Reference: plan.md > Page Sections > 3. The Homeowner Story
+         ================================================================ -->
+    <section class="section section--alt" id="story" aria-labelledby="story-title">
+      <div class="container">
+        <div class="story">
+          <header class="story__header fade-in">
+            <h2 id="story-title">The Story Behind the Transformation</h2>
+          </header>
+
+          <div class="story__content">
+            <div class="fade-in">
+              <h3>The Challenge</h3>
+              <p>
+                When the Martins first reached out to us, they were living with a kitchen
+                that hadn't been updated in over thirty years. The layout made meal prep
+                feel like an obstacle course. The bathrooms were cramped, dated, and
+                showing their age. They loved their home's location and bones, but the
+                daily frustrations had built up over the years.
+              </p>
+            </div>
+
+            <div class="fade-in">
+              <h3>What Mattered Most</h3>
+              <p>
+                From our first conversation, it was clear this wasn't about following
+                trends or making a showpiece. The Martins wanted spaces that actually
+                worked for how they lived: a kitchen where they could cook together
+                without bumping into each other, a primary bath that felt like a
+                retreat after long days, storage that made sense for their lives.
+              </p>
+            </div>
+
+            <div class="fade-in">
+              <h3>The Process</h3>
+              <p>
+                We spent time really understanding their routines and priorities before
+                drawing a single plan. The design evolved through real conversations,
+                not just about materials and finishes, but about how they wanted to
+                feel in these spaces. Every decision, from cabinet configuration to
+                lighting placement, connected back to their daily life.
+              </p>
+            </div>
+
+            <blockquote class="story__quote fade-in">
+              "They didn't just renovate our kitchen and bathrooms. They changed how
+              we experience our home every single day. The morning routine that used
+              to be stressful is now something we actually enjoy."
+              <span class="story__quote-author">Sarah &amp; Michael Martin, Homeowners</span>
+            </blockquote>
+
+            <div class="fade-in">
+              <h3>The Result</h3>
+              <p>
+                The finished spaces exceeded what the Martins had imagined. The kitchen
+                now flows naturally, with room to cook, gather, and connect. The primary
+                bath became the peaceful retreat they'd always wanted. But the real
+                measure of success? Six months later, they told us it still makes them
+                smile every morning.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================
+         BEFORE & AFTER GALLERY
+         Reference: plan.md > Page Sections > 4. Before & After Gallery
+         ================================================================ -->
+    <section class="section" id="gallery" aria-labelledby="gallery-title">
+      <div class="container">
+        <header class="gallery__header fade-in">
+          <h2 id="gallery-title">Before &amp; After</h2>
+          <p class="lead">Drag the slider to compare the transformation</p>
+        </header>
+
+        <!-- Comparison Slider -->
+        <div class="comparison fade-in" aria-label="Before and after comparison slider">
+          <div class="comparison__wrapper">
+            <div class="comparison__image comparison__image--before placeholder">
+              Before Image Placeholder
+            </div>
+            <div class="comparison__image comparison__image--after placeholder" style="background-color: #B39C8B;">
+              After Image Placeholder
+            </div>
+            <div class="comparison__slider">
+              <div class="comparison__handle" role="slider" aria-label="Comparison slider handle" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" tabindex="0"></div>
+            </div>
+            <span class="comparison__label comparison__label--before">Before</span>
+            <span class="comparison__label comparison__label--after">After</span>
+          </div>
+        </div>
+
+        <!-- Image Grid -->
+        <div class="gallery__grid stagger-children">
+          <div class="gallery__item placeholder" role="img" aria-label="Kitchen detail before">
+            Kitchen Before
+          </div>
+          <div class="gallery__item placeholder" role="img" aria-label="Kitchen detail after" style="background-color: #B39C8B;">
+            Kitchen After
+          </div>
+          <div class="gallery__item placeholder" role="img" aria-label="Cabinetry detail" style="background-color: #ECD9C7;">
+            Detail Shot
+          </div>
+          <div class="gallery__item placeholder" role="img" aria-label="Bathroom before">
+            Bath Before
+          </div>
+          <div class="gallery__item placeholder" role="img" aria-label="Bathroom after" style="background-color: #B39C8B;">
+            Bath After
+          </div>
+          <div class="gallery__item placeholder" role="img" aria-label="Finished space detail" style="background-color: #ECD9C7;">
+            Detail Shot
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================
+         WHY CHOOSE CPP SECTION
+         Reference: plan.md > Page Sections > 5. Why Homeowners Choose CPP
+         ================================================================ -->
+    <section class="section section--warm" id="why" aria-labelledby="why-title">
+      <div class="container">
+        <header class="features__header fade-in">
+          <h2 id="why-title">Why Homeowners Choose CPP</h2>
+        </header>
+
+        <div class="features__grid stagger-children">
+          <article class="feature-card">
+            <div class="feature-card__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9.53 16.122a3 3 0 0 0-5.78 1.128 2.25 2.25 0 0 1-2.4 2.245 4.5 4.5 0 0 0 8.4-2.245c0-.399-.078-.78-.22-1.128Zm0 0a15.998 15.998 0 0 0 3.388-1.62m-5.043-.025a15.994 15.994 0 0 1 1.622-3.395m3.42 3.42a15.995 15.995 0 0 0 4.764-4.648l3.876-5.814a1.151 1.151 0 0 0-1.597-1.597L14.146 6.32a15.996 15.996 0 0 0-4.649 4.763m3.42 3.42a6.776 6.776 0 0 0-3.42-3.42" />
+              </svg>
+            </div>
+            <h3 class="feature-card__title">Thoughtful Design Process</h3>
+            <p class="feature-card__text">
+              We listen first, design second. Every project starts with understanding
+              how you actually live.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-card__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6A2.25 2.25 0 0 1 6 3.75h2.25A2.25 2.25 0 0 1 10.5 6v2.25a2.25 2.25 0 0 1-2.25 2.25H6a2.25 2.25 0 0 1-2.25-2.25V6ZM3.75 15.75A2.25 2.25 0 0 1 6 13.5h2.25a2.25 2.25 0 0 1 2.25 2.25V18a2.25 2.25 0 0 1-2.25 2.25H6A2.25 2.25 0 0 1 3.75 18v-2.25ZM13.5 6a2.25 2.25 0 0 1 2.25-2.25H18A2.25 2.25 0 0 1 20.25 6v2.25A2.25 2.25 0 0 1 18 10.5h-2.25a2.25 2.25 0 0 1-2.25-2.25V6ZM13.5 15.75a2.25 2.25 0 0 1 2.25-2.25H18a2.25 2.25 0 0 1 2.25 2.25V18A2.25 2.25 0 0 1 18 20.25h-2.25A2.25 2.25 0 0 1 13.5 18v-2.25Z" />
+              </svg>
+            </div>
+            <h3 class="feature-card__title">Detail-Driven Planning</h3>
+            <p class="feature-card__text">
+              From cabinet configuration to outlet placement, nothing is overlooked
+              or left to chance.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-card__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m21 7.5-9-5.25L3 7.5m18 0-9 5.25m9-5.25v9l-9 5.25M3 7.5l9 5.25M3 7.5v9l9 5.25m0-9v9" />
+              </svg>
+            </div>
+            <h3 class="feature-card__title">Cabinetry &amp; Material Guidance</h3>
+            <p class="feature-card__text">
+              Expert help selecting materials that match your style, budget,
+              and how you use your spaces.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-card__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+              </svg>
+            </div>
+            <h3 class="feature-card__title">Local Cape Cod Knowledge</h3>
+            <p class="feature-card__text">
+              We understand the unique character of Cape Cod homes and the
+              craftsmanship they deserve.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-card__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+              </svg>
+            </div>
+            <h3 class="feature-card__title">Personal Service</h3>
+            <p class="feature-card__text">
+              From first conversation to final walkthrough, you work directly
+              with our team, not a sales department.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-card__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
+              </svg>
+            </div>
+            <h3 class="feature-card__title">Quality Guaranteed</h3>
+            <p class="feature-card__text">
+              We stand behind our work with a commitment to excellence and
+              your complete satisfaction.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Visual Divider -->
+    <div class="divider" aria-hidden="true"></div>
+
+    <!-- ================================================================
+         CALL TO ACTION SECTION
+         Reference: plan.md > Page Sections > 6. Call to Action
+         ================================================================ -->
+    <section class="section section--warm cta" id="contact" aria-labelledby="cta-title">
+      <div class="container">
+        <div class="fade-in">
+          <h2 class="cta__title" id="cta-title">Ready to Transform Your Space?</h2>
+          <p class="cta__subtitle">
+            Schedule a design consultation to discuss your vision.
+          </p>
+
+          <a href="#" class="btn btn--primary" data-track="cta_click" data-track-label="Book a Consultation - Footer">
+            Book a Consultation
+          </a>
+
+          <a href="tel:+15085551234" class="cta__phone callrail-phone" data-track="click_to_call" data-track-label="(508) 555-1234">
+            Or call <span class="callrail-phone">(508) 555-1234</span>
+          </a>
+
+          <nav class="cta__links" aria-label="Social and external links">
+            <a href="https://instagram.com/cppkitchenbath" class="cta__link" target="_blank" rel="noopener noreferrer" data-track="outbound_link" data-track-label="Instagram">
+              Instagram
+            </a>
+            <a href="https://facebook.com/cppkitchenbath" class="cta__link" target="_blank" rel="noopener noreferrer" data-track="outbound_link" data-track-label="Facebook">
+              Facebook
+            </a>
+            <a href="https://cppkitchenbath.com" class="cta__link" target="_blank" rel="noopener noreferrer" data-track="outbound_link" data-track-label="View More Projects">
+              View More Projects
+            </a>
+          </nav>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================================================================
+       FOOTER
+       Reference: plan.md > Page Sections > 7. Footer
+       ================================================================ -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer__text">
+        CPP Kitchen &amp; Bath &nbsp;|&nbsp; Cape Cod, MA &nbsp;|&nbsp; <span class="callrail-phone">(508) 555-1234</span>
+      </p>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="js/main.js"></script>
+</body>
+</html>
