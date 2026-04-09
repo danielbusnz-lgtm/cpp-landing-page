@@ -68,7 +68,12 @@
        Full-bleed image with dark overlay, staggered animations
        ================================================================ -->
   <header class="hero" id="hero">
-    <div class="hero__background" aria-hidden="true"></div>
+    <div class="hero__slideshow" aria-hidden="true">
+      <div class="hero__slide active" style="background-image: url('images/hero-2.jpg');"></div>
+      <div class="hero__slide" style="background-image: url('images/hero-3.jpg');"></div>
+      <div class="hero__slide" style="background-image: url('images/hero-4.jpg');"></div>
+      <div class="hero__slide" style="background-image: url('images/hero-5.jpg');"></div>
+    </div>
     <div class="hero__overlay" aria-hidden="true"></div>
 
     <div class="hero__content">
@@ -93,6 +98,24 @@
         </a>
       </div>
     </div>
+
+    <div class="hero__dots" id="heroNav">
+      <button type="button" class="hero__dot active" onclick="window.changeSlide(0)"></button>
+      <button type="button" class="hero__dot" onclick="window.changeSlide(1)"></button>
+      <button type="button" class="hero__dot" onclick="window.changeSlide(2)"></button>
+      <button type="button" class="hero__dot" onclick="window.changeSlide(3)"></button>
+    </div>
+
+    <script>
+      window.changeSlide = function(index) {
+        document.querySelectorAll('.hero__slide').forEach((s, i) => {
+          s.classList.toggle('active', i === index);
+        });
+        document.querySelectorAll('.hero__dot').forEach((d, i) => {
+          d.classList.toggle('active', i === index);
+        });
+      };
+    </script>
   </header>
 
   <main>
@@ -104,12 +127,8 @@
       <div class="container">
         <div class="magazine">
           <div class="magazine__images fade-in-left">
-            <div class="magazine__image placeholder">
-              Magazine Cover Placeholder
-            </div>
-            <div class="magazine__image placeholder">
-              Magazine Spread Placeholder
-            </div>
+            <img src="images/kitchen-1.jpeg" alt="Kitchen transformation" class="magazine__image">
+            <img src="images/kitchen-2.jpg" alt="Kitchen details" class="magazine__image">
           </div>
 
           <div class="magazine__content fade-in-right">
@@ -126,9 +145,8 @@
               incredibly proud of.
             </p>
 
-            <div class="scratch-card" id="scratchCard">
-              <img src="images/qr-code.png" alt="Scan to view story online" class="scratch-card__reveal">
-              <canvas class="scratch-card__canvas" id="scratchCanvas"></canvas>
+            <div class="qr-code-container">
+              <img src="images/qr-code.png" alt="Scan to view story online" class="qr-code">
             </div>
 
           </div>
@@ -217,11 +235,9 @@
         <!-- Comparison Slider -->
         <div class="comparison fade-in" aria-label="Before and after comparison slider">
           <div class="comparison__wrapper">
-            <div class="comparison__image comparison__image--before placeholder">
-              Before Image Placeholder
+            <div class="comparison__image comparison__image--before" style="background-image: url('images/bath-before.jpg');">
             </div>
-            <div class="comparison__image comparison__image--after placeholder" style="background-color: #B39C8B;">
-              After Image Placeholder
+            <div class="comparison__image comparison__image--after" style="background-image: url('images/bath-after.jpg');">
             </div>
             <div class="comparison__slider">
               <div class="comparison__handle" role="slider" aria-label="Comparison slider handle" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" tabindex="0"></div>
@@ -233,24 +249,12 @@
 
         <!-- Image Grid -->
         <div class="gallery__grid stagger-children">
-          <div class="gallery__item placeholder" role="img" aria-label="Kitchen detail before">
-            Kitchen Before
-          </div>
-          <div class="gallery__item placeholder" role="img" aria-label="Kitchen detail after" style="background-color: #B39C8B;">
-            Kitchen After
-          </div>
-          <div class="gallery__item placeholder" role="img" aria-label="Cabinetry detail" style="background-color: #ECD9C7;">
-            Detail Shot
-          </div>
-          <div class="gallery__item placeholder" role="img" aria-label="Bathroom before">
-            Bath Before
-          </div>
-          <div class="gallery__item placeholder" role="img" aria-label="Bathroom after" style="background-color: #B39C8B;">
-            Bath After
-          </div>
-          <div class="gallery__item placeholder" role="img" aria-label="Finished space detail" style="background-color: #ECD9C7;">
-            Detail Shot
-          </div>
+          <div class="gallery__item" role="img" aria-label="Kitchen detail" style="background-image: url('images/kitchen-1.jpeg');"></div>
+          <div class="gallery__item" role="img" aria-label="Kitchen view" style="background-image: url('images/kitchen-2.jpg');"></div>
+          <div class="gallery__item" role="img" aria-label="Kitchen space" style="background-image: url('images/kitchen-3.jpeg');"></div>
+          <div class="gallery__item" role="img" aria-label="Bathroom detail" style="background-image: url('images/bath-1.jpeg');"></div>
+          <div class="gallery__item" role="img" aria-label="Bathroom view" style="background-image: url('images/bath-2.jpeg');"></div>
+          <div class="gallery__item" role="img" aria-label="Detail shot" style="background-image: url('images/detail-1.jpeg');"></div>
         </div>
       </div>
     </section>

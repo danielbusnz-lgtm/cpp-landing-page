@@ -189,6 +189,61 @@
   }
 
   /* ==========================================================================
+     HERO SLIDESHOW
+     ========================================================================== */
+
+  function initHeroSlideshow() {
+    const slides = document.querySelectorAll('.hero__slide');
+    const dots = document.querySelectorAll('.hero__dot');
+    if (slides.length === 0) return;
+
+    let currentSlide = 0;
+    let autoSlideInterval;
+
+    function showSlide(index) {
+      // Remove active class from all slides and dots
+      slides.forEach(slide => slide.classList.remove('active'));
+      dots.forEach(dot => dot.classList.remove('active'));
+
+      // Add active class to current slide and dot
+      slides[index].classList.add('active');
+      dots[index].classList.add('active');
+
+      currentSlide = index;
+    }
+
+    function nextSlide() {
+      const next = (currentSlide + 1) % slides.length;
+      showSlide(next);
+    }
+
+    function startAutoSlide() {
+      autoSlideInterval = setInterval(nextSlide, 5000); // Change slide every 5 seconds
+    }
+
+    function stopAutoSlide() {
+      clearInterval(autoSlideInterval);
+    }
+
+    // Click handlers for dots
+    dots.forEach((dot, index) => {
+      dot.addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        console.log('Dot clicked:', index);
+        stopAutoSlide();
+        showSlide(index);
+        startAutoSlide();
+      });
+    });
+
+    console.log('Hero slideshow initialized with', slides.length, 'slides and', dots.length, 'dots');
+
+    // Start auto-sliding
+    startAutoSlide();
+  }
+
+  /* ==========================================================================
      SCRATCH CARD
      ========================================================================== */
 
@@ -426,6 +481,7 @@
   function onDOMReady() {
     initScrollAnimations();
     initComparisonSlider();
+    initHeroSlideshow();
     initScratchCard();
     initSmoothScroll();
     initClickTracking();

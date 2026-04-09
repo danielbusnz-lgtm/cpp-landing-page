@@ -1,0 +1,25 @@
+NEXT STEPS - CPP Kitchen & Bath Landing Page
+=============================================
+
+1. ADD GOOGLE ANALYTICS TO WORDPRESS SITE
+------------------------------------------
+   a. Log into WordPress admin (yoursite.com/wp-admin)
+   b. Go to Plugins > Add New
+   c. Search for "Site Kit by Google" (official Google plugin)
+   d. Install and activate it
+   e. It walks you through connecting your Google account and sets up Analytics automatically
+
+2. ADD GOOGLE ANALYTICS TO THIS LANDING PAGE
+--------------------------------------------
+   a. Go to analytics.google.com
+   b. Create an account/property for this landing page
+   c. Copy the Measurement ID (starts with G-)
+   d. Open index.html and find the commented GA4 section (around line 24)
+   e. Uncomment it and replace GA_MEASUREMENT_ID with your actual ID
+
+3. OPTIONAL: META PIXEL FOR FACEBOOK/INSTAGRAM ADS
+--------------------------------------------------
+   a. Go to business.facebook.com
+   b. Create a Meta Pixel
+   c. Copy the Pixel ID
+   d. Uncomment the Meta Pixel section in index.html and add your ID
