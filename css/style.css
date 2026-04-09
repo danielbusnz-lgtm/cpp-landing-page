@@ -540,13 +540,18 @@ p {
 
 /* QR Code Container */
 .qr-code-container {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: var(--space-md);
 }
 
 .qr-code-container .qr-code {
   width: 200px;
   height: auto;
+  background-color: #FFFFFF;
+  padding: 15px;
+  border-radius: 8px;
 }
 
 .magazine__content p {
