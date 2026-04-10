@@ -547,11 +547,11 @@ p {
 }
 
 .qr-code-container .qr-code {
-  width: 400px;
+  width: 600px;
   height: auto;
   background-color: #FFFFFF;
-  padding: 15px;
-  border-radius: 8px;
+  padding: 20px;
+  border-radius: 12px;
 }
 
 .magazine__content p {
