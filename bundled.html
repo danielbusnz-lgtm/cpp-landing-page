@@ -1,0 +1,2046 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Featured in Cape Cod HOME magazine. Discover the story behind this custom kitchen and bath transformation by CPP Kitchen & Bath.">
+
+  <!-- Open Graph / Social -->
+  <meta property="og:title" content="A Moment to Shine | CPP Kitchen & Bath">
+  <meta property="og:description" content="Featured in Cape Cod HOME magazine. A kitchen and bath transformation designed with care, detail, and the homeowner's vision at the center.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://cppkitchenbath.com/cape-cod-home">
+  <!-- <meta property="og:image" content=""> -->
+
+  <title>A Moment to Shine | Featured in Cape Cod HOME | CPP Kitchen & Bath</title>
+
+  <!-- Preconnect to Google Analytics -->
+  <link rel="preconnect" href="https://www.googletagmanager.com">
+
+  <!-- GA4 - Replace GA_MEASUREMENT_ID with actual ID -->
+  <!--
+  <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'GA_MEASUREMENT_ID');
+  </script>
+  -->
+
+  <!-- Meta Pixel - Replace PIXEL_ID with actual ID -->
+  <!--
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', 'PIXEL_ID');
+    fbq('track', 'PageView');
+  </script>
+  -->
+
+  <!-- CallRail Dynamic Number Insertion - Replace ACCOUNT_ID and TRACKING_NUMBER -->
+  <!--
+  <script type="text/javascript">
+    (function(a,b,c,d,e,f,g){
+      a['CallRailObject']=e;a[e]=a[e]||function(){
+      (a[e].q=a[e].q||[]).push(arguments)};a[e].t=1*new Date();
+      f=b.createElement(c);f.async=1;f.src=d;
+      g=b.getElementsByTagName(c)[0];g.parentNode.insertBefore(f,g);
+    })(window,document,'script','//cdn.callrail.com/companies/ACCOUNT_ID/TRACKING_NUMBER.js','CallRail');
+  </script>
+  -->
+  <!-- CallRail will automatically swap phone numbers with class "callrail-phone" -->
+
+  <style>
+/* ==========================================================================
+   CPP Kitchen & Bath - Cape Cod HOME Feature Landing Page
+   Design tokens and styles based on plan.md specifications
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   CSS Custom Properties (Design Tokens)
+   Reference: plan.md > Design Specifications
+   -------------------------------------------------------------------------- */
+
+:root {
+  /* Colors - from theartisticelements.com palette */
+  --color-primary: #B39C8B;
+  --color-secondary: #B39D93;
+  --color-accent: #3F3E3E;
+  --color-bg: #FFFFFF;
+  --color-bg-alt: #F8F6F4;
+  --color-text: #222222;
+  --color-text-light: #666666;
+  --color-cream: #ECD9C7;
+  --color-white: #FFFFFF;
+
+  /* Typography */
+  --font-heading: Georgia, "Times New Roman", serif;
+  --font-body: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+  /* Font sizes */
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1.0625rem;
+  --text-lg: 1.25rem;
+  --text-xl: 1.5rem;
+  --text-2xl: 2rem;
+  --text-3xl: 2.5rem;
+  --text-4xl: 3rem;
+  --text-5xl: 3.75rem;
+
+  /* Spacing */
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 2rem;
+  --space-lg: 4rem;
+  --space-xl: 7.5rem;
+
+  /* Layout */
+  --max-width: 1200px;
+  --max-width-narrow: 800px;
+
+  /* Shadows */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 8px 40px rgba(0, 0, 0, 0.12);
+
+  /* Transitions */
+  --transition-fast: 0.2s ease;
+  --transition-base: 0.3s ease;
+  --transition-slow: 0.6s ease;
+}
+
+/* --------------------------------------------------------------------------
+   Reset & Base Styles
+   -------------------------------------------------------------------------- */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  line-height: 1.7;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  color: var(--color-accent);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+a:hover {
+  color: var(--color-primary);
+}
+
+/* --------------------------------------------------------------------------
+   Typography
+   Reference: plan.md > Typography specifications
+   -------------------------------------------------------------------------- */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 400;
+  line-height: 1.2;
+  color: var(--color-accent);
+}
+
+h1 {
+  font-size: var(--text-5xl);
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  font-size: var(--text-4xl);
+  letter-spacing: -0.01em;
+}
+
+h3 {
+  font-size: var(--text-2xl);
+}
+
+h4 {
+  font-size: var(--text-xl);
+}
+
+p {
+  margin-bottom: var(--space-sm);
+}
+
+.lead {
+  font-size: var(--text-lg);
+  color: var(--color-text-light);
+}
+
+.small {
+  font-size: var(--text-sm);
+}
+
+/* --------------------------------------------------------------------------
+   Layout Components
+   -------------------------------------------------------------------------- */
+
+.container {
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--space-md);
+}
+
+.container--narrow {
+  max-width: var(--max-width-narrow);
+}
+
+.section {
+  padding: var(--space-xl) 0;
+}
+
+.section--alt {
+  background-color: var(--color-bg-alt);
+}
+
+.section--warm {
+  background-color: var(--color-cream);
+}
+
+/* --------------------------------------------------------------------------
+   Buttons
+   Reference: plan.md > Components > Buttons
+   -------------------------------------------------------------------------- */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 2rem;
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  border: none;
+  cursor: pointer;
+  transition: all var(--transition-base);
+  position: relative;
+  overflow: hidden;
+}
+
+.btn:focus {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+/* Micro-interaction: subtle shine effect on hover */
+.btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
+  transition: left 0.5s ease;
+}
+
+.btn:hover::before {
+  left: 100%;
+}
+
+.btn--primary {
+  background-color: var(--color-accent);
+  color: var(--color-white);
+}
+
+.btn--primary:hover {
+  background-color: #2a2a2a;
+  color: var(--color-white);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+.btn--primary:active {
+  transform: translateY(-1px);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn--secondary {
+  background-color: var(--color-white);
+  color: var(--color-accent);
+  border: 2px solid var(--color-primary);
+}
+
+.btn--secondary:hover {
+  background-color: var(--color-bg-alt);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.btn--secondary:active {
+  transform: translateY(-1px);
+}
+
+/* Hero button variants - work on dark background */
+.hero .btn--primary {
+  background-color: var(--color-white);
+  color: var(--color-accent);
+}
+
+.hero .btn--primary:hover {
+  background-color: var(--color-cream);
+  color: var(--color-accent);
+}
+
+.hero .btn--secondary {
+  background-color: transparent;
+  color: var(--color-white);
+  border: 2px solid rgba(255, 255, 255, 0.6);
+}
+
+.hero .btn--secondary:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: var(--color-white);
+  color: var(--color-white);
+}
+
+.btn-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+}
+
+/* --------------------------------------------------------------------------
+   Hero Section
+   Reference: plan.md > Page Sections > 1. Hero Section
+   Full-bleed image with dark overlay, centered content
+   -------------------------------------------------------------------------- */
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: var(--space-xl) var(--space-md);
+  position: relative;
+  background-color: #B39C8B;
+  overflow: hidden;
+}
+
+/* Hero Slideshow */
+.hero__slideshow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.hero__slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.hero__slide.active {
+  opacity: 1;
+}
+
+/* Hero Dots Navigation */
+.hero__dots {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 16px;
+  z-index: 100;
+  pointer-events: auto;
+}
+
+.hero__dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 2px solid rgba(179, 156, 139, 0.8);
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  padding: 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.hero__dot:hover {
+  background: rgba(179, 156, 139, 0.5);
+  transform: scale(1.15);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.hero__dot.active {
+  background: linear-gradient(135deg, #B39C8B, #D4C4B5);
+  border-color: #D4C4B5;
+  box-shadow: 0 2px 12px rgba(179, 156, 139, 0.6);
+}
+
+/* Dark overlay for text readability */
+.hero__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background: linear-gradient(
+    to bottom,
+    rgba(34, 34, 34, 0.35) 0%,
+    rgba(34, 34, 34, 0.45) 100%
+  );
+  z-index: 1;
+}
+
+.hero__content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+}
+
+/* Badge with border and subtle background */
+.hero__badge {
+  display: inline-block;
+  padding: 0.625rem 1.75rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  color: var(--color-white);
+  font-size: var(--text-sm);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  margin-bottom: var(--space-md);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
+/* Larger headline - 64px on desktop */
+.hero__title {
+  font-size: 4rem;
+  color: var(--color-white);
+  margin-bottom: var(--space-sm);
+  text-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+}
+
+.hero__subtitle {
+  font-size: var(--text-xl);
+  color: rgba(255, 255, 255, 0.9);
+  max-width: 600px;
+  margin: 0 auto var(--space-lg);
+  font-weight: 300;
+  text-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Staggered hero animations */
+.hero .hero__badge {
+  animation: heroFadeIn 0.8s ease forwards;
+  animation-delay: 0.2s;
+  opacity: 0;
+}
+
+.hero .hero__title {
+  animation: heroFadeIn 0.8s ease forwards;
+  animation-delay: 0.4s;
+  opacity: 0;
+}
+
+.hero .hero__subtitle {
+  animation: heroFadeIn 0.8s ease forwards;
+  animation-delay: 0.6s;
+  opacity: 0;
+}
+
+.hero .btn-group {
+  animation: heroFadeIn 0.8s ease forwards;
+  animation-delay: 0.8s;
+  opacity: 0;
+}
+
+.hero .hero__scroll {
+  animation: heroFadeIn 0.8s ease forwards;
+  animation-delay: 1.2s;
+  opacity: 0;
+}
+
+@keyframes heroFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Scroll indicator */
+.hero__scroll {
+  position: absolute;
+  bottom: var(--space-lg);
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-xs);
+  color: rgba(255, 255, 255, 0.7);
+  font-size: var(--text-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  cursor: pointer;
+  transition: color var(--transition-fast);
+  z-index: 2;
+}
+
+.hero__scroll:hover {
+  color: var(--color-white);
+}
+
+.hero__scroll-arrow {
+  width: 24px;
+  height: 24px;
+  animation: scrollBounce 2s ease-in-out infinite;
+}
+
+@keyframes scrollBounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(8px);
+  }
+  60% {
+    transform: translateY(4px);
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Magazine Feature Section
+   Reference: plan.md > Page Sections > 2. Magazine Feature Section
+   -------------------------------------------------------------------------- */
+
+.magazine {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-lg);
+  align-items: center;
+}
+
+.magazine__images {
+  display: grid;
+  gap: var(--space-sm);
+}
+
+.magazine__image {
+  background-color: var(--color-secondary);
+  aspect-ratio: 4/5;
+  width: 100%;
+  object-fit: cover;
+}
+
+.magazine__logo {
+  height: 80px;
+  width: auto;
+  margin: 0 auto var(--space-sm);
+  display: block;
+}
+
+.magazine__content {
+  text-align: center;
+}
+
+.magazine__content h2 {
+  margin-bottom: var(--space-sm);
+}
+
+/* QR Code Container */
+.qr-code-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: var(--space-md);
+}
+
+.qr-code-container .qr-code {
+  width: 200px;
+  height: auto;
+  background-color: #FFFFFF;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.magazine__content p {
+  color: var(--color-text-light);
+}
+
+/* QR Code Component (for print magazine) */
+.qr-code {
+  margin-top: var(--space-md);
+  padding: var(--space-md);
+  background-color: var(--color-bg-alt);
+  text-align: center;
+  max-width: 280px;
+}
+
+.qr-code__image {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto var(--space-sm);
+  background-color: var(--color-white);
+  border: 1px solid var(--color-secondary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--text-xs);
+  color: var(--color-text-light);
+}
+
+.qr-code__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.qr-code__text {
+  font-size: var(--text-sm);
+  font-weight: 500;
+  color: var(--color-accent);
+  margin-bottom: var(--space-xs);
+}
+
+.qr-code__url {
+  font-size: var(--text-xs);
+  color: var(--color-text-light);
+  word-break: break-all;
+  margin-bottom: 0;
+}
+
+/* --------------------------------------------------------------------------
+   Story Section
+   Reference: plan.md > Page Sections > 3. The Homeowner Story
+   -------------------------------------------------------------------------- */
+
+.story {
+  max-width: var(--max-width-narrow);
+  margin: 0 auto;
+}
+
+.story__header {
+  text-align: center;
+  margin-bottom: var(--space-lg);
+}
+
+.story__content p {
+  margin-bottom: var(--space-md);
+}
+
+.story__quote {
+  padding: var(--space-md);
+  border-left: 4px solid var(--color-primary);
+  margin: var(--space-lg) 0;
+  font-family: var(--font-heading);
+  font-size: var(--text-xl);
+  font-style: italic;
+  color: var(--color-accent);
+}
+
+.story__quote-author {
+  display: block;
+  margin-top: var(--space-sm);
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  font-style: normal;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-text-light);
+}
+
+/* --------------------------------------------------------------------------
+   Before/After Gallery
+   Reference: plan.md > Page Sections > 4. Before & After Gallery
+   -------------------------------------------------------------------------- */
+
+.gallery__header {
+  text-align: center;
+  margin-bottom: var(--space-lg);
+}
+
+/* Comparison Slider */
+.comparison {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto var(--space-lg);
+  overflow: hidden;
+  cursor: ew-resize;
+}
+
+.comparison__wrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16/10;
+}
+
+.comparison__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+}
+
+.comparison__image--before {
+  z-index: 1;
+}
+
+.comparison__image--after {
+  z-index: 2;
+  clip-path: inset(0 50% 0 0);
+}
+
+.comparison__slider {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 4px;
+  background-color: var(--color-white);
+  z-index: 3;
+  transform: translateX(-50%);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.comparison__handle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 48px;
+  height: 48px;
+  background-color: var(--color-white);
+  border-radius: 50%;
+  box-shadow: var(--shadow-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: ew-resize;
+}
+
+.comparison__handle::before,
+.comparison__handle::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.comparison__handle::before {
+  border-width: 6px 8px 6px 0;
+  border-color: transparent var(--color-accent) transparent transparent;
+  margin-right: 8px;
+}
+
+.comparison__handle::after {
+  border-width: 6px 0 6px 8px;
+  border-color: transparent transparent transparent var(--color-accent);
+}
+
+.comparison__label {
+  position: absolute;
+  bottom: var(--space-sm);
+  padding: 0.25rem 0.75rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: var(--color-white);
+  font-size: var(--text-xs);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  z-index: 4;
+}
+
+.comparison__label--before {
+  left: var(--space-sm);
+}
+
+.comparison__label--after {
+  right: var(--space-sm);
+}
+
+/* Image Grid */
+.gallery__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-sm);
+}
+
+.gallery__item {
+  aspect-ratio: 4/3;
+  background-color: var(--color-secondary);
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform var(--transition-base);
+}
+
+.gallery__item:hover {
+  transform: scale(1.02);
+}
+
+.gallery__item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Placeholder for images */
+.placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-secondary);
+  color: var(--color-white);
+  font-size: var(--text-sm);
+  text-align: center;
+  padding: var(--space-sm);
+}
+
+/* --------------------------------------------------------------------------
+   Why Choose Section
+   Reference: plan.md > Page Sections > 5. Why Homeowners Choose CPP
+   -------------------------------------------------------------------------- */
+
+.features__header {
+  text-align: center;
+  margin-bottom: var(--space-xl);
+}
+
+.features__header h2 {
+  margin-bottom: var(--space-sm);
+}
+
+.features__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-lg);
+}
+
+.feature-card {
+  padding: var(--space-lg);
+  background-color: var(--color-white);
+  box-shadow: var(--shadow-md);
+  text-align: left;
+  transition: all var(--transition-base);
+}
+
+.feature-card:hover {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-6px);
+}
+
+.feature-card__icon {
+  width: 64px;
+  height: 64px;
+  margin-bottom: var(--space-md);
+  background-color: var(--color-cream);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.feature-card__icon svg {
+  width: 32px;
+  height: 32px;
+  stroke: var(--color-accent);
+}
+
+.feature-card__title {
+  font-family: var(--font-heading);
+  font-size: var(--text-lg);
+  font-weight: 400;
+  margin-bottom: var(--space-sm);
+  color: var(--color-accent);
+}
+
+.feature-card__text {
+  font-size: var(--text-base);
+  color: var(--color-text-light);
+  margin-bottom: 0;
+  line-height: 1.7;
+}
+
+/* Visual Divider */
+.divider {
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    var(--color-primary),
+    transparent
+  );
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* --------------------------------------------------------------------------
+   CTA Section
+   Reference: plan.md > Page Sections > 6. Call to Action
+   -------------------------------------------------------------------------- */
+
+.cta {
+  text-align: center;
+  background-color: var(--color-cream);
+}
+
+.cta__title {
+  margin-bottom: var(--space-sm);
+}
+
+.cta__subtitle {
+  font-size: var(--text-lg);
+  color: var(--color-text-light);
+  margin-bottom: var(--space-lg);
+}
+
+.cta__phone {
+  display: block;
+  margin-top: var(--space-md);
+  font-size: var(--text-lg);
+  color: var(--color-accent);
+}
+
+.cta__phone:hover {
+  color: var(--color-primary);
+}
+
+.cta__links {
+  margin-top: var(--space-lg);
+  display: flex;
+  justify-content: center;
+  gap: var(--space-md);
+  flex-wrap: wrap;
+}
+
+.cta__link {
+  font-size: var(--text-sm);
+  color: var(--color-text-light);
+  transition: color var(--transition-fast);
+}
+
+.cta__link:hover {
+  color: var(--color-accent);
+}
+
+/* --------------------------------------------------------------------------
+   Footer
+   Reference: plan.md > Page Sections > 7. Footer
+   -------------------------------------------------------------------------- */
+
+.footer {
+  padding: var(--space-md) 0;
+  text-align: center;
+  background-color: var(--color-accent);
+  color: var(--color-white);
+}
+
+.footer__text {
+  font-size: var(--text-sm);
+  opacity: 0.8;
+  margin-bottom: 0;
+}
+
+/* --------------------------------------------------------------------------
+   Scroll Animations
+   Reference: plan.md > Scroll Animation Approach
+   -------------------------------------------------------------------------- */
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity var(--transition-slow), transform var(--transition-slow);
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-in-left {
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: opacity var(--transition-slow), transform var(--transition-slow);
+}
+
+.fade-in-left.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.fade-in-right {
+  opacity: 0;
+  transform: translateX(20px);
+  transition: opacity var(--transition-slow), transform var(--transition-slow);
+}
+
+.fade-in-right.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Stagger animations for children */
+.stagger-children > * {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity var(--transition-slow), transform var(--transition-slow);
+}
+
+.stagger-children.visible > *:nth-child(1) { transition-delay: 0s; }
+.stagger-children.visible > *:nth-child(2) { transition-delay: 0.1s; }
+.stagger-children.visible > *:nth-child(3) { transition-delay: 0.2s; }
+.stagger-children.visible > *:nth-child(4) { transition-delay: 0.3s; }
+.stagger-children.visible > *:nth-child(5) { transition-delay: 0.4s; }
+
+.stagger-children.visible > * {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Respect reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  .fade-in,
+  .fade-in-left,
+  .fade-in-right,
+  .stagger-children > * {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .hero .hero__badge,
+  .hero .hero__title,
+  .hero .hero__subtitle,
+  .hero .btn-group,
+  .hero .hero__scroll {
+    animation: none;
+    opacity: 1;
+  }
+
+  .hero__scroll-arrow {
+    animation: none;
+  }
+
+  .btn::before {
+    display: none;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Responsive Design
+   -------------------------------------------------------------------------- */
+
+@media (max-width: 1024px) {
+  .features__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --text-5xl: 2.5rem;
+    --text-4xl: 2rem;
+    --text-3xl: 1.75rem;
+    --space-xl: 4rem;
+    --space-lg: 3rem;
+  }
+
+  .hero {
+    min-height: 100vh;
+    padding: var(--space-lg) var(--space-sm);
+    padding-bottom: calc(var(--space-lg) + 60px);
+  }
+
+  .hero__title {
+    font-size: 2.5rem;
+  }
+
+  .hero__subtitle {
+    font-size: var(--text-base);
+  }
+
+  .hero__scroll {
+    bottom: var(--space-md);
+  }
+
+  .btn-group {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .magazine {
+    grid-template-columns: 1fr;
+    gap: var(--space-md);
+  }
+
+  .gallery__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .features__grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-md);
+  }
+
+  .feature-card {
+    padding: var(--space-md);
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Utility Classes
+   -------------------------------------------------------------------------- */
+
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+
+.mt-sm { margin-top: var(--space-sm); }
+.mt-md { margin-top: var(--space-md); }
+.mt-lg { margin-top: var(--space-lg); }
+
+.mb-sm { margin-bottom: var(--space-sm); }
+.mb-md { margin-bottom: var(--space-md); }
+.mb-lg { margin-bottom: var(--space-lg); }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+  </style>
+</head>
+<body>
+
+  <!-- ================================================================
+       HERO SECTION
+       Reference: plan.md > Page Sections > 1. Hero Section
+       Full-bleed image with dark overlay, staggered animations
+       ================================================================ -->
+  <header class="hero" id="hero">
+    <div class="hero__slideshow" aria-hidden="true">
+      <div class="hero__slide active" style="background-image: url('https://raw.githubusercontent.com/danielbusnz-lgtm/cpp-landing-page/master/images/hero-2.jpg');"></div>
+      <div class="hero__slide" style="background-image: url('https://raw.githubusercontent.com/danielbusnz-lgtm/cpp-landing-page/master/images/hero-3.jpg');"></div>
+      <div class="hero__slide" style="background-image: url('https://raw.githubusercontent.com/danielbusnz-lgtm/cpp-landing-page/master/images/hero-4.jpg');"></div>
+      <div class="hero__slide" style="background-image: url('https://raw.githubusercontent.com/danielbusnz-lgtm/cpp-landing-page/master/images/hero-5.jpg');"></div>
+    </div>
+    <div class="hero__overlay" aria-hidden="true"></div>
+
+    <div class="hero__content">
+      <span class="hero__badge">Featured in Cape Cod HOME</span>
+
+      <h1 class="hero__title">A Moment to Shine</h1>
+
+      <p class="hero__subtitle">
+        A kitchen and bath transformation designed with care, detail,
+        and the homeowner's vision at the center.
+      </p>
+
+      <div class="btn-group" role="group" aria-label="Primary actions">
+        <a href="#story" class="btn btn--primary" data-track="cta_click" data-track-label="Read the Story">
+          Read the Story
+        </a>
+        <a href="#gallery" class="btn btn--secondary" data-track="cta_click" data-track-label="View Before & After">
+          View Before &amp; After
+        </a>
+        <a href="#contact" class="btn btn--secondary" data-track="cta_click" data-track-label="Book a Consultation">
+          Book a Consultation
+        </a>
+      </div>
+    </div>
+
+    <div class="hero__dots" id="heroNav">
+      <button type="button" class="hero__dot active" onclick="window.changeSlide(0)"></button>
+      <button type="button" class="hero__dot" onclick="window.changeSlide(1)"></button>
+      <button type="button" class="hero__dot" onclick="window.changeSlide(2)"></button>
+      <button type="button" class="hero__dot" onclick="window.changeSlide(3)"></button>
+    </div>
+
+    <script>
+      window.changeSlide = function(index) {
+        document.querySelectorAll('.hero__slide').forEach((s, i) => {
+          s.classList.toggle('active', i === index);
+        });
+        document.querySelectorAll('.hero__dot').forEach((d, i) => {
+          d.classList.toggle('active', i === index);
+        });
+      };
+    </script>
+  </header>
+
+  <main>
+    <!-- ================================================================
+         MAGAZINE FEATURE SECTION
+         Reference: plan.md > Page Sections > 2. Magazine Feature Section
+         ================================================================ -->
+    <section class="section" id="magazine" aria-labelledby="magazine-title">
+      <div class="container">
+        <div class="magazine">
+          <div class="magazine__images fade-in-left">
+            <img src="https://raw.githubusercontent.com/danielbusnz-lgtm/cpp-landing-page/master/images/kitchen-1.jpeg" alt="Kitchen transformation" class="magazine__image">
+            <img src="https://raw.githubusercontent.com/danielbusnz-lgtm/cpp-landing-page/master/images/kitchen-2.jpg" alt="Kitchen details" class="magazine__image">
+          </div>
+
+          <div class="magazine__content fade-in-right">
+            <img src="https://raw.githubusercontent.com/danielbusnz-lgtm/cpp-landing-page/master/images/cape-cod-home-logo.png" alt="Cape Cod HOME Magazine" class="magazine__logo">
+            <h2 id="magazine-title" class="visually-hidden">Featured in Cape Cod HOME</h2>
+            <p class="lead">
+              We were honored to be featured in Cape Cod HOME for this custom
+              kitchen and bath transformation.
+            </p>
+            <p>
+              The magazine captured not just the finished spaces, but the story
+              behind them: the homeowner's vision, the design process, and the
+              craftsmanship that brought it all together. It's a project we're
+              incredibly proud of.
+            </p>
+
+            <div class="qr-code-container">
+              <img src="https://raw.githubusercontent.com/danielbusnz-lgtm/cpp-landing-page/master/images/qr-code.png" alt="Scan to view story online" class="qr-code">
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================
+         HOMEOWNER STORY SECTION
+         Reference: plan.md > Page Sections > 3. The Homeowner Story
+         ================================================================ -->
+    <section class="section section--alt" id="story" aria-labelledby="story-title">
+      <div class="container">
+        <div class="story">
+          <header class="story__header fade-in">
+            <h2 id="story-title">The Story Behind the Transformation</h2>
+          </header>
+
+          <div class="story__content">
+            <div class="fade-in">
+              <h3>The Challenge</h3>
+              <p>
+                When the Martins first reached out to us, they were living with a kitchen
+                that hadn't been updated in over thirty years. The layout made meal prep
+                feel like an obstacle course. The bathrooms were cramped, dated, and
+                showing their age. They loved their home's location and bones, but the
+                daily frustrations had built up over the years.
+              </p>
+            </div>
+
+            <div class="fade-in">
+              <h3>What Mattered Most</h3>
+              <p>
+                From our first conversation, it was clear this wasn't about following
+                trends or making a showpiece. The Martins wanted spaces that actually
+                worked for how they lived: a kitchen where they could cook together
+                without bumping into each other, a primary bath that felt like a
+                retreat after long days, storage that made sense for their lives.
+              </p>
+            </div>
+
+            <div class="fade-in">
+              <h3>The Process</h3>
+              <p>
+                We spent time really understanding their routines and priorities before
+                drawing a single plan. The design evolved through real conversations,
+                not just about materials and finishes, but about how they wanted to
+                feel in these spaces. Every decision, from cabinet configuration to
+                lighting placement, connected back to their daily life.
+              </p>
+            </div>
+
+            <blockquote class="story__quote fade-in">
+              "They didn't just renovate our kitchen and bathrooms. They changed how
+              we experience our home every single day. The morning routine that used
+              to be stressful is now something we actually enjoy."
+              <span class="story__quote-author">Sarah &amp; Michael Martin, Homeowners</span>
+            </blockquote>
+
+            <div class="fade-in">
+              <h3>The Result</h3>
+              <p>
+                The finished spaces exceeded what the Martins had imagined. The kitchen
+                now flows naturally, with room to cook, gather, and connect. The primary
+                bath became the peaceful retreat they'd always wanted. But the real
+                measure of success? Six months later, they told us it still makes them
+                smile every morning.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================
+         BEFORE & AFTER GALLERY
+         Reference: plan.md > Page Sections > 4. Before & After Gallery
+         ================================================================ -->
+    <section class="section" id="gallery" aria-labelledby="gallery-title">
+      <div class="container">
+        <header class="gallery__header fade-in">
+          <h2 id="gallery-title">Before &amp; After</h2>
+          <p class="lead">Drag the slider to compare the transformation</p>
+        </header>
+
+        <!-- Comparison Slider -->
+        <div class="comparison fade-in" aria-label="Before and after comparison slider">
+          <div class="comparison__wrapper">
+            <div class="comparison__image comparison__image--before" style="background-image: url('https://raw.githubusercontent.com/danielbusnz-lgtm/cpp-landing-page/master/images/bath-after.jpg');">
+            </div>
+            <div class="comparison__image comparison__image--after" style="background-image: url('https://raw.githubusercontent.com/danielbusnz-lgtm/cpp-landing-page/master/images/bath-before.jpg');">
+            </div>
+            <div class="comparison__slider">
+              <div class="comparison__handle" role="slider" aria-label="Comparison slider handle" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" tabindex="0"></div>
+            </div>
+            <span class="comparison__label comparison__label--before">Before</span>
+            <span class="comparison__label comparison__label--after">After</span>
+          </div>
+        </div>
+
+        <!-- Image Grid -->
+        <div class="gallery__grid stagger-children">
+          <div class="gallery__item" role="img" aria-label="Kitchen detail" style="background-image: url('https://raw.githubusercontent.com/danielbusnz-lgtm/cpp-landing-page/master/images/kitchen-1.jpeg');"></div>
+          <div class="gallery__item" role="img" aria-label="Kitchen view" style="background-image: url('https://raw.githubusercontent.com/danielbusnz-lgtm/cpp-landing-page/master/images/kitchen-2.jpg');"></div>
+          <div class="gallery__item" role="img" aria-label="Kitchen space" style="background-image: url('https://raw.githubusercontent.com/danielbusnz-lgtm/cpp-landing-page/master/images/kitchen-3.jpeg');"></div>
+          <div class="gallery__item" role="img" aria-label="Bathroom detail" style="background-image: url('https://raw.githubusercontent.com/danielbusnz-lgtm/cpp-landing-page/master/images/bath-1.jpeg');"></div>
+          <div class="gallery__item" role="img" aria-label="Bathroom view" style="background-image: url('https://raw.githubusercontent.com/danielbusnz-lgtm/cpp-landing-page/master/images/bath-2.jpeg');"></div>
+          <div class="gallery__item" role="img" aria-label="Detail shot" style="background-image: url('https://raw.githubusercontent.com/danielbusnz-lgtm/cpp-landing-page/master/images/detail-1.jpeg');"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================
+         WHY CHOOSE CPP SECTION
+         Reference: plan.md > Page Sections > 5. Why Homeowners Choose CPP
+         ================================================================ -->
+    <section class="section section--warm" id="why" aria-labelledby="why-title">
+      <div class="container">
+        <header class="features__header fade-in">
+          <h2 id="why-title">Why Homeowners Choose CPP</h2>
+        </header>
+
+        <div class="features__grid stagger-children">
+          <article class="feature-card">
+            <div class="feature-card__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9.53 16.122a3 3 0 0 0-5.78 1.128 2.25 2.25 0 0 1-2.4 2.245 4.5 4.5 0 0 0 8.4-2.245c0-.399-.078-.78-.22-1.128Zm0 0a15.998 15.998 0 0 0 3.388-1.62m-5.043-.025a15.994 15.994 0 0 1 1.622-3.395m3.42 3.42a15.995 15.995 0 0 0 4.764-4.648l3.876-5.814a1.151 1.151 0 0 0-1.597-1.597L14.146 6.32a15.996 15.996 0 0 0-4.649 4.763m3.42 3.42a6.776 6.776 0 0 0-3.42-3.42" />
+              </svg>
+            </div>
+            <h3 class="feature-card__title">Thoughtful Design Process</h3>
+            <p class="feature-card__text">
+              We listen first, design second. Every project starts with understanding
+              how you actually live.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-card__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6A2.25 2.25 0 0 1 6 3.75h2.25A2.25 2.25 0 0 1 10.5 6v2.25a2.25 2.25 0 0 1-2.25 2.25H6a2.25 2.25 0 0 1-2.25-2.25V6ZM3.75 15.75A2.25 2.25 0 0 1 6 13.5h2.25a2.25 2.25 0 0 1 2.25 2.25V18a2.25 2.25 0 0 1-2.25 2.25H6A2.25 2.25 0 0 1 3.75 18v-2.25ZM13.5 6a2.25 2.25 0 0 1 2.25-2.25H18A2.25 2.25 0 0 1 20.25 6v2.25A2.25 2.25 0 0 1 18 10.5h-2.25a2.25 2.25 0 0 1-2.25-2.25V6ZM13.5 15.75a2.25 2.25 0 0 1 2.25-2.25H18a2.25 2.25 0 0 1 2.25 2.25V18A2.25 2.25 0 0 1 18 20.25h-2.25A2.25 2.25 0 0 1 13.5 18v-2.25Z" />
+              </svg>
+            </div>
+            <h3 class="feature-card__title">Detail-Driven Planning</h3>
+            <p class="feature-card__text">
+              From cabinet configuration to outlet placement, nothing is overlooked
+              or left to chance.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-card__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m21 7.5-9-5.25L3 7.5m18 0-9 5.25m9-5.25v9l-9 5.25M3 7.5l9 5.25M3 7.5v9l9 5.25m0-9v9" />
+              </svg>
+            </div>
+            <h3 class="feature-card__title">Cabinetry &amp; Material Guidance</h3>
+            <p class="feature-card__text">
+              Expert help selecting materials that match your style, budget,
+              and how you use your spaces.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-card__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+              </svg>
+            </div>
+            <h3 class="feature-card__title">Local Cape Cod Knowledge</h3>
+            <p class="feature-card__text">
+              We understand the unique character of Cape Cod homes and the
+              craftsmanship they deserve.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-card__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+              </svg>
+            </div>
+            <h3 class="feature-card__title">Personal Service</h3>
+            <p class="feature-card__text">
+              From first conversation to final walkthrough, you work directly
+              with our team, not a sales department.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-card__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
+              </svg>
+            </div>
+            <h3 class="feature-card__title">Quality Guaranteed</h3>
+            <p class="feature-card__text">
+              We stand behind our work with a commitment to excellence and
+              your complete satisfaction.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Visual Divider -->
+    <div class="divider" aria-hidden="true"></div>
+
+    <!-- ================================================================
+         CALL TO ACTION SECTION
+         Reference: plan.md > Page Sections > 6. Call to Action
+         ================================================================ -->
+    <section class="section section--warm cta" id="contact" aria-labelledby="cta-title">
+      <div class="container">
+        <div class="fade-in">
+          <h2 class="cta__title" id="cta-title">Ready to Transform Your Space?</h2>
+          <p class="cta__subtitle">
+            Schedule a design consultation to discuss your vision.
+          </p>
+
+          <a href="#" class="btn btn--primary" data-track="cta_click" data-track-label="Book a Consultation - Footer">
+            Book a Consultation
+          </a>
+
+          <a href="tel:+15086196130" class="cta__phone" data-track="click_to_call" data-track-label="(508) 619-6130">
+            Or call (508) 619-6130
+          </a>
+
+          <nav class="cta__links" aria-label="Social and external links">
+            <a href="https://instagram.com/cppkitchenbath" class="cta__link" target="_blank" rel="noopener noreferrer" data-track="outbound_link" data-track-label="Instagram">
+              Instagram
+            </a>
+            <a href="https://facebook.com/cppkitchenbath" class="cta__link" target="_blank" rel="noopener noreferrer" data-track="outbound_link" data-track-label="Facebook">
+              Facebook
+            </a>
+            <a href="https://cppkitchenbath.com" class="cta__link" target="_blank" rel="noopener noreferrer" data-track="outbound_link" data-track-label="View More Projects">
+              View More Projects
+            </a>
+          </nav>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================================================================
+       FOOTER
+       Reference: plan.md > Page Sections > 7. Footer
+       ================================================================ -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer__text" style="margin-bottom: 0.5rem;">
+        <strong>CPP Kitchen &amp; Bath</strong>
+      </p>
+      <p class="footer__text" style="margin-bottom: 0.5rem;">
+        <a href="tel:+15086196130" style="color: inherit;">(508) 619-6130</a> &nbsp;|&nbsp;
+        <a href="mailto:info@cppkitchenbath.com" style="color: inherit;">info@cppkitchenbath.com</a>
+      </p>
+      <p class="footer__text" style="margin-bottom: 0.5rem;">
+        394 Main Street Unit 2, West Dennis, MA 02670
+      </p>
+      <p class="footer__text" style="margin-bottom: 0.5rem;">
+        Mon-Fri 9-5 &nbsp;|&nbsp; Sat 9-3 &nbsp;|&nbsp; Sun 10-3
+      </p>
+      <p class="footer__text" style="margin-top: 1rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em;">
+        Book Your Appointment Prior to Your Visit
+      </p>
+    </div>
+  </footer>
+
+  <script>
+/**
+ * CPP Kitchen & Bath - Cape Cod HOME Feature Landing Page
+ * JavaScript for animations, slider, and tracking
+ * Reference: plan.md > Scroll Animation Approach, GA4 Event Tracking
+ */
+
+(function() {
+  'use strict';
+
+  /* ==========================================================================
+     SCROLL ANIMATIONS
+     Using Intersection Observer API for performance
+     Reference: plan.md > Scroll Animation Approach
+     Docs: https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API
+     ========================================================================== */
+
+  /**
+   * Initialize scroll-triggered animations
+   * Elements with .fade-in, .fade-in-left, .fade-in-right, .stagger-children
+   * will animate when they enter the viewport
+   */
+  function initScrollAnimations() {
+    // Check if user prefers reduced motion
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    if (prefersReducedMotion) {
+      // Make all elements visible immediately
+      document.querySelectorAll('.fade-in, .fade-in-left, .fade-in-right, .stagger-children').forEach(el => {
+        el.classList.add('visible');
+      });
+      return;
+    }
+
+    // Observer options
+    const observerOptions = {
+      root: null, // viewport
+      rootMargin: '0px 0px -50px 0px', // trigger slightly before element is fully visible
+      threshold: 0.1 // 10% of element visible
+    };
+
+    // Create observer
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          // Unobserve after animation (performance optimization)
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+
+    // Observe all animated elements
+    const animatedElements = document.querySelectorAll(
+      '.fade-in, .fade-in-left, .fade-in-right, .stagger-children'
+    );
+
+    animatedElements.forEach(el => {
+      observer.observe(el);
+    });
+  }
+
+  /* ==========================================================================
+     BEFORE/AFTER COMPARISON SLIDER
+     Custom implementation with touch support
+     Reference: plan.md > Before/After Slider Implementation
+     ========================================================================== */
+
+  /**
+   * Initialize the before/after comparison slider
+   */
+  function initComparisonSlider() {
+    const comparison = document.querySelector('.comparison');
+    if (!comparison) return;
+
+    const wrapper = comparison.querySelector('.comparison__wrapper');
+    const afterImage = comparison.querySelector('.comparison__image--after');
+    const slider = comparison.querySelector('.comparison__slider');
+    const handle = comparison.querySelector('.comparison__handle');
+
+    let isDragging = false;
+
+    /**
+     * Update slider position and image clip
+     * @param {number} percentage - Position as percentage (0-100)
+     */
+    function updateSliderPosition(percentage) {
+      // Clamp between 0 and 100
+      percentage = Math.max(0, Math.min(100, percentage));
+
+      // Update slider position
+      slider.style.left = `${percentage}%`;
+
+      // Update after image clip path
+      afterImage.style.clipPath = `inset(0 ${100 - percentage}% 0 0)`;
+
+      // Update ARIA value
+      handle.setAttribute('aria-valuenow', Math.round(percentage));
+    }
+
+    /**
+     * Get percentage from mouse/touch position
+     * @param {number} clientX - X position of pointer
+     * @returns {number} Percentage position
+     */
+    function getPercentageFromPosition(clientX) {
+      const rect = wrapper.getBoundingClientRect();
+      const x = clientX - rect.left;
+      return (x / rect.width) * 100;
+    }
+
+    // Mouse events
+    function onMouseDown(e) {
+      isDragging = true;
+      comparison.style.cursor = 'ew-resize';
+      updateSliderPosition(getPercentageFromPosition(e.clientX));
+    }
+
+    function onMouseMove(e) {
+      if (!isDragging) return;
+      e.preventDefault();
+      updateSliderPosition(getPercentageFromPosition(e.clientX));
+    }
+
+    function onMouseUp() {
+      isDragging = false;
+      comparison.style.cursor = 'ew-resize';
+    }
+
+    // Touch events
+    function onTouchStart(e) {
+      isDragging = true;
+      updateSliderPosition(getPercentageFromPosition(e.touches[0].clientX));
+    }
+
+    function onTouchMove(e) {
+      if (!isDragging) return;
+      e.preventDefault();
+      updateSliderPosition(getPercentageFromPosition(e.touches[0].clientX));
+    }
+
+    function onTouchEnd() {
+      isDragging = false;
+    }
+
+    // Keyboard support for accessibility
+    function onKeyDown(e) {
+      const currentValue = parseFloat(handle.getAttribute('aria-valuenow')) || 50;
+      let newValue = currentValue;
+
+      switch (e.key) {
+        case 'ArrowLeft':
+        case 'ArrowDown':
+          newValue = currentValue - 5;
+          e.preventDefault();
+          break;
+        case 'ArrowRight':
+        case 'ArrowUp':
+          newValue = currentValue + 5;
+          e.preventDefault();
+          break;
+        case 'Home':
+          newValue = 0;
+          e.preventDefault();
+          break;
+        case 'End':
+          newValue = 100;
+          e.preventDefault();
+          break;
+      }
+
+      if (newValue !== currentValue) {
+        updateSliderPosition(newValue);
+      }
+    }
+
+    // Attach event listeners
+    comparison.addEventListener('mousedown', onMouseDown);
+    document.addEventListener('mousemove', onMouseMove);
+    document.addEventListener('mouseup', onMouseUp);
+
+    comparison.addEventListener('touchstart', onTouchStart, { passive: true });
+    comparison.addEventListener('touchmove', onTouchMove, { passive: false });
+    comparison.addEventListener('touchend', onTouchEnd);
+
+    handle.addEventListener('keydown', onKeyDown);
+
+    // Set initial position
+    updateSliderPosition(50);
+  }
+
+  /* ==========================================================================
+     HERO SLIDESHOW
+     ========================================================================== */
+
+  function initHeroSlideshow() {
+    const slides = document.querySelectorAll('.hero__slide');
+    const dots = document.querySelectorAll('.hero__dot');
+    if (slides.length === 0) return;
+
+    let currentSlide = 0;
+    let autoSlideInterval;
+
+    function showSlide(index) {
+      // Remove active class from all slides and dots
+      slides.forEach(slide => slide.classList.remove('active'));
+      dots.forEach(dot => dot.classList.remove('active'));
+
+      // Add active class to current slide and dot
+      slides[index].classList.add('active');
+      dots[index].classList.add('active');
+
+      currentSlide = index;
+    }
+
+    function nextSlide() {
+      const next = (currentSlide + 1) % slides.length;
+      showSlide(next);
+    }
+
+    function startAutoSlide() {
+      autoSlideInterval = setInterval(nextSlide, 5000); // Change slide every 5 seconds
+    }
+
+    function stopAutoSlide() {
+      clearInterval(autoSlideInterval);
+    }
+
+    // Click handlers for dots
+    dots.forEach((dot, index) => {
+      dot.addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        console.log('Dot clicked:', index);
+        stopAutoSlide();
+        showSlide(index);
+        startAutoSlide();
+      });
+    });
+
+    console.log('Hero slideshow initialized with', slides.length, 'slides and', dots.length, 'dots');
+
+    // Start auto-sliding
+    startAutoSlide();
+  }
+
+  /* ==========================================================================
+     SCRATCH CARD
+     ========================================================================== */
+
+  function initScratchCard() {
+    const card = document.getElementById('scratchCard');
+    const canvas = document.getElementById('scratchCanvas');
+    if (!card || !canvas) return;
+
+    const ctx = canvas.getContext('2d');
+    let isScratching = false;
+    let scratchedPercent = 0;
+
+    // Set canvas size
+    function setCanvasSize() {
+      canvas.width = card.offsetWidth;
+      canvas.height = card.offsetHeight;
+      fillCanvas();
+    }
+
+    // Fill with scratch-off coating
+    function fillCanvas() {
+      ctx.fillStyle = '#FFFFFF';
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+    }
+
+    // Scratch at position
+    function scratch(x, y) {
+      ctx.globalCompositeOperation = 'destination-out';
+      ctx.beginPath();
+      ctx.arc(x, y, 50, 0, Math.PI * 2);
+      ctx.fill();
+      card.classList.add('scratched');
+      checkScratchProgress();
+    }
+
+    // Check how much is scratched
+    function checkScratchProgress() {
+      const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+      const pixels = imageData.data;
+      let transparent = 0;
+      for (let i = 3; i < pixels.length; i += 4) {
+        if (pixels[i] === 0) transparent++;
+      }
+      scratchedPercent = (transparent / (pixels.length / 4)) * 100;
+      if (scratchedPercent > 50) {
+        canvas.style.opacity = '0';
+        canvas.style.transition = 'opacity 0.5s';
+      }
+    }
+
+    // Get position from event
+    function getPos(e) {
+      const rect = canvas.getBoundingClientRect();
+      const clientX = e.touches ? e.touches[0].clientX : e.clientX;
+      const clientY = e.touches ? e.touches[0].clientY : e.clientY;
+      return {
+        x: clientX - rect.left,
+        y: clientY - rect.top
+      };
+    }
+
+    // Event handlers - hover to scratch (no click needed)
+    function doScratch(e) {
+      e.preventDefault();
+      const pos = getPos(e);
+      scratch(pos.x, pos.y);
+    }
+
+    // Init
+    setCanvasSize();
+    window.addEventListener('resize', setCanvasSize);
+
+    // Mouse - just hover to scratch
+    canvas.addEventListener('mousemove', doScratch);
+
+    // Touch events
+    canvas.addEventListener('touchstart', doScratch, { passive: false });
+    canvas.addEventListener('touchmove', doScratch, { passive: false });
+  }
+
+  /* ==========================================================================
+     SMOOTH SCROLL FOR ANCHOR LINKS
+     ========================================================================== */
+
+  function initSmoothScroll() {
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        const href = this.getAttribute('href');
+        if (href === '#') return;
+
+        const target = document.querySelector(href);
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+  }
+
+  /* ==========================================================================
+     ANALYTICS & TRACKING
+     Reference: plan.md > GA4 Event Tracking
+     ========================================================================== */
+
+  /**
+   * Track event with GA4
+   * @param {string} eventName - Event name
+   * @param {object} params - Event parameters
+   */
+  function trackEvent(eventName, params = {}) {
+    // GA4 tracking
+    if (typeof gtag === 'function') {
+      gtag('event', eventName, params);
+    }
+
+    // Meta Pixel tracking
+    if (typeof fbq === 'function') {
+      // Map our events to Facebook events
+      const fbEventMap = {
+        'cta_click': 'Lead',
+        'form_submit': 'Lead',
+        'click_to_call': 'Contact',
+        'outbound_link': 'ViewContent'
+      };
+
+      const fbEvent = fbEventMap[eventName];
+      if (fbEvent) {
+        fbq('track', fbEvent, params);
+      }
+    }
+
+    // Console log for development
+    console.log('Track:', eventName, params);
+  }
+
+  /**
+   * Initialize click tracking for CTAs and links
+   */
+  function initClickTracking() {
+    document.querySelectorAll('[data-track]').forEach(element => {
+      element.addEventListener('click', function() {
+        const eventName = this.getAttribute('data-track');
+        const label = this.getAttribute('data-track-label') || this.textContent.trim();
+
+        trackEvent(eventName, {
+          button_text: label,
+          button_location: this.closest('section')?.id || 'unknown'
+        });
+      });
+    });
+  }
+
+  /**
+   * Track scroll depth
+   * Reference: plan.md > GA4 Event Tracking > scroll event
+   */
+  function initScrollDepthTracking() {
+    const thresholds = [25, 50, 75, 90];
+    const tracked = new Set();
+
+    function checkScrollDepth() {
+      const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
+      const scrollPercent = Math.round((window.scrollY / scrollHeight) * 100);
+
+      thresholds.forEach(threshold => {
+        if (scrollPercent >= threshold && !tracked.has(threshold)) {
+          tracked.add(threshold);
+          trackEvent('scroll', {
+            percent_scrolled: threshold
+          });
+        }
+      });
+    }
+
+    // Throttle scroll handler
+    let ticking = false;
+    window.addEventListener('scroll', () => {
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          checkScrollDepth();
+          ticking = false;
+        });
+        ticking = true;
+      }
+    });
+  }
+
+  /* ==========================================================================
+     FORM HANDLING (for future contact form)
+     ========================================================================== */
+
+  function initFormTracking() {
+    const forms = document.querySelectorAll('form');
+
+    forms.forEach(form => {
+      let hasStarted = false;
+
+      // Track form start
+      form.querySelectorAll('input, textarea, select').forEach(field => {
+        field.addEventListener('focus', function() {
+          if (!hasStarted) {
+            hasStarted = true;
+            trackEvent('form_start', {
+              form_name: form.getAttribute('name') || 'contact_form'
+            });
+          }
+        }, { once: true });
+      });
+
+      // Track form submit
+      form.addEventListener('submit', function(e) {
+        trackEvent('form_submit', {
+          form_name: form.getAttribute('name') || 'contact_form'
+        });
+      });
+    });
+  }
+
+  /* ==========================================================================
+     INITIALIZATION
+     ========================================================================== */
+
+  function init() {
+    // Wait for DOM to be ready
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', onDOMReady);
+    } else {
+      onDOMReady();
+    }
+  }
+
+  function onDOMReady() {
+    initScrollAnimations();
+    initComparisonSlider();
+    initHeroSlideshow();
+    initScratchCard();
+    initSmoothScroll();
+    initClickTracking();
+    initScrollDepthTracking();
+    initFormTracking();
+
+    // Log page view for development
+    console.log('CPP Landing Page initialized');
+  }
+
+  // Start
+  init();
+
+})();
+  </script>
+</body>
+</html>
